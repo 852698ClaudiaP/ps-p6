@@ -72,7 +72,7 @@ resource dev3 "Peter Green" {
 }
 resource dev4 "Claudia Pavon" {
   email "852698@unizar.es"
-  shift 0 4 hours
+  shift myshift 4 hours
 }
 
 
