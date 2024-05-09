@@ -304,7 +304,7 @@ textreport frame "" {
 
   textreport init "Initial" {
     formats html
-    center '<[report id="inicial"]>'
+    center '<[report id="initial"]>'
   }
 
   textreport "Status" {
