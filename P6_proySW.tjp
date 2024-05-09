@@ -70,10 +70,12 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-shift myshift "a shift"
+shift myshift "a shift" {
+    workinghours mon-fri 4 h
+}
 resource dev4 "Claudia Pavon" {
   email "852698@unizar.es"
-  shifts myshift 4 h
+  shifts myshift
 }
 
 
