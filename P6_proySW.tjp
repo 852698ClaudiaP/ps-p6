@@ -48,7 +48,7 @@ account cost "Project Cost" {
   account wFront "Web Front-End"
   account pFront "Phone Front-End"
   account back "Back-End"
-  account could "Cloud"
+  account cloud "Cloud"
 }
 account rev "Payments"
 # The Profit&Loss analysis should be rev - cost accounts.
