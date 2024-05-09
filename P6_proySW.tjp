@@ -99,6 +99,7 @@ task WMGame "Web & Mobile Game" {
     
 
   task tgdesign "General System Design" {
+    effort 2d
       inicial:effort 2d
       allocate boss
       depends WMGame.deliveries.start
