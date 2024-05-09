@@ -302,7 +302,7 @@ textreport frame "" {
     center '<[report id="overview"]>'
   }
 
-  textreport overvi "Initial" {
+  textreport overvi "Initial2" {
     formats html
     center '<[report id="inicial"]>'
   }
