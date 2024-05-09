@@ -70,11 +70,11 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
+shift myshift 4 hours
 resource dev4 "Claudia Pavon" {
   email "852698@unizar.es"
   shift myshift 4 hours
 }
-
 
 
 # Now we specify the work packages. The whole project is described as
