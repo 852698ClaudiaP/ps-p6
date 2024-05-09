@@ -112,10 +112,12 @@ task WMGame "Web & Mobile Game" {
     depends WMGame.tgdesign
     task tBEd "Back End General Design" {
       # The effort to finish this task is 5 man-days.
+      effort 5d
       inicial:effort 5d
       allocate dev1
     }
     task tlogic "Game logic" {
+        effort 12d
       inicial:effort 12d
       actual:effort 11d
       allocate dev1, dev2
@@ -141,10 +143,12 @@ task WMGame "Web & Mobile Game" {
     responsible dev4
     depends WMGame.tback
     task tCloudc "Could Choosing" {
+        effort 5d
       inicial:effort 5d
       allocate dev4
     }
     task tCloudd "Cloud Deploy" {
+        effort 10d
       inicial:effort 10d
       allocate dev4
       depends WMGame.tcloud.tCloudc
@@ -157,6 +161,7 @@ task WMGame "Web & Mobile Game" {
     responsible dev2
     depends WMGame.tback.tBEd
     task tGUId "Web GUI Design" {
+        effort 9d
       inicial:effort 9d
       actual:effort 15d
       allocate dev2
@@ -167,11 +172,13 @@ task WMGame "Web & Mobile Game" {
       }
     }
     task tFEc "Phone Front End Construction" {
+        effort 15d
       inicial:effort 15d
       allocate dev2, dev3
       depends WMGame.tphoneF.tGUId
     }
     task tFEt "Phone Front End Test" {
+        effort 6d
       inicial:effort 6d
       allocate dev1
       depends WMGame.tphoneF.tFEc
@@ -184,6 +191,7 @@ task WMGame "Web & Mobile Game" {
     responsible dev3
     depends WMGame.tback.tBEd
     task tGUId "Web GUI Design" {
+        effort 9d
       inicial:effort 9d
       actual:effort 15d
       allocate dev3
@@ -194,11 +202,13 @@ task WMGame "Web & Mobile Game" {
       }
     }
     task tFEc "Web Front End Construction" {
+        effort 15d
       inicial:effort 15d
       allocate dev2, dev3
       depends WMGame.twebF.tGUId
     }
     task tFEt "Web Front End Test" {
+        effort 6d
       inicial:effort 6d
       allocate dev1
       depends WMGame.twebF.tFEc
@@ -207,6 +217,7 @@ task WMGame "Web & Mobile Game" {
 
   task ttest "Accpetance tests" {
         start 2024-06-01
+        effort 10d
       inicial:effort 10d
       allocate boss
       allocate dev2
